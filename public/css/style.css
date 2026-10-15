@@ -129,4 +129,4 @@ fieldset.kotak legend { font-family: var(--font-judul); font-weight: 600; paddin
 .metode:has(input:checked) { border-color: var(--aksen); box-shadow: 0 0 0 2px var(--aksen); }
 .kode-bayar { font-family: var(--font-kode); font-size: 1.3rem; letter-spacing: 0.05em; word-break: break-all; }
 details { font-size: 0.95rem; }
-summary { cursor: pointer; font-weight: 700; }
+summary { cursor: pointer; font-weight: 700; } 
