@@ -11,9 +11,9 @@ class DashboardController extends Controller
     public function index()
     {
         // Ringkasan data untuk kartu statistik
-        $totalInformasi  = Informasi::count();
-        $informasiAktif  = Informasi::aktif()->count();
-        $totalUsers      = User::count();
+        $totalInformasi = Informasi::count();
+        $informasiAktif = Informasi::aktif()->count();
+        $totalUsers     = User::count();
 
         // 5 informasi terbaru untuk tabel di dashboard
         $informasiTerbaru = Informasi::orderByDesc('tanggal_publikasi')->take(5)->get();

@@ -1,0 +1,35 @@
+:root {
+  --teal: #3cc4c0;
+  --teal-dark: #2aa8a5;
+  --sidebar: #d9eaf4;
+  --bg: #eaf4fb;
+  --card: #ffffff;
+  --text: #1f2d3d;
+  --muted: #6b7c8c;
+  --badge-aktif: #c8f0d4;
+  --badge-draft: #fde8c4;
+  --badge-arsip: #e2e6ea;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Inter', Arial, sans-serif; background: var(--bg); color: var(--text); }
+.btn { background: var(--teal); color: #fff; border: 0; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+.btn:hover { background: var(--teal-dark); }
+.card { background: var(--card); border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.field { margin-bottom: 14px; }
+.field label { display: block; font-size: 13px; margin-bottom: 4px; color: var(--muted); }
+.field input { width: 100%; padding: 10px; border: 1px solid #cfdde8; border-radius: 8px; }
+.error { background: #fde2e2; color: #a32d2d; padding: 8px 12px; border-radius: 8px; margin-bottom: 12px; font-size: 13px; }
+
+/* Login dua kolom */
+.login-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #b8d8f8, #bdf0e8); }
+.login-card { width: min(780px, 92vw); display: flex; padding: 14px; }
+.login-side { flex: 1; border-radius: 14px; background: linear-gradient(160deg, #a9c8fb, #a8ecd8);
+  padding: 24px; display: flex; flex-direction: column; justify-content: flex-end; min-height: 380px; }
+.login-side p { margin: 6px 0 0; font-size: 20px; font-weight: 600; max-width: 220px; }
+.login-brand { font-weight: 700; letter-spacing: 1px; font-size: 14px; }
+.login-form { flex: 1; padding: 24px 28px; align-self: center; }
+@media (max-width: 700px) {
+  .login-card { flex-direction: column; }
+  .login-side { min-height: 140px; }
+}

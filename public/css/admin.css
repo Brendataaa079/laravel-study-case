@@ -1,0 +1,28 @@
+.layout { display: flex; min-height: 100vh; }
+.sidebar { width: 230px; background: var(--sidebar); padding: 20px 14px; display: flex; flex-direction: column; flex-shrink: 0; }
+.brand { font-weight: 700; font-size: 18px; color: var(--teal-dark); margin: 0 8px 24px; }
+.menu a { display: block; padding: 10px 14px; border-radius: 8px; color: var(--text); text-decoration: none; margin-bottom: 6px; font-size: 14px; }
+.menu a:hover { background: rgba(255,255,255,.6); }
+.menu a.active { background: var(--teal); color: #fff; }
+.sidebar form { margin-top: auto; }
+.btn-logout { width: 100%; background: transparent; border: 0; text-align: left; padding: 10px 14px; cursor: pointer; color: var(--text); font-size: 14px; border-radius: 8px; }
+.btn-logout:hover { background: rgba(255,255,255,.6); }
+.main { flex: 1; min-width: 0; }
+.topbar { background: #fff; padding: 14px 28px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #dbe7f0; }
+.topbar .who { font-size: 14px; color: var(--muted); }
+.content { padding: 28px; }
+.content h1 { margin: 0; font-size: 22px; }
+.content .sub { color: var(--muted); font-size: 14px; margin: 4px 0 20px; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+.stat .label { color: var(--muted); font-size: 13px; }
+.stat .num { font-size: 28px; font-weight: 700; margin-top: 6px; }
+table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.tbl th { text-align: left; color: var(--muted); font-weight: 500; padding: 10px 8px; border-bottom: 1px solid #e3edf4; }
+table.tbl td { padding: 12px 8px; border-bottom: 1px solid #eef4f8; }
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 12px; }
+.badge.aktif { background: var(--badge-aktif); color: #1d6b37; }
+.badge.draft { background: var(--badge-draft); color: #8a5a0a; }
+.badge.arsip { background: var(--badge-arsip); color: #4b5560; }
+.card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.card-head h3 { margin: 0; font-size: 16px; }
+@media (max-width: 800px) { .stats { grid-template-columns: 1fr; } .sidebar { width: 170px; } }
